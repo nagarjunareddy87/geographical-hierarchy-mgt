@@ -1,0 +1,7 @@
+<div>
+    State : 
+    <select (change)="onStateChange($event)">
+      <option value="0">--Select--</option>
+      <option *ngFor="let state of selectedStates" value="{{state.Id}}">{{state.stateName}}</option>
+    </select>
+  </div>
